@@ -1,10 +1,18 @@
+
 {
-  "name": "virtual-dom",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "vdom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vdom.js",
   "scripts": {
-    "compile": "" 
-   } 
- 
+    "compile": "babel ./src/lib.js --out-file ./dist/compiled.js",
+    "watch": "babel ./src/lib.js --out-file ./dist/compiled.js --watch"
+
+  },
+  "author": "",
+  "license": "SEE LICENSE IN whatever",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.23.0"
+  }
 }
