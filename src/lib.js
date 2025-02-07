@@ -8,8 +8,8 @@ const REMOVE_PROP = "REMOVE_PROP";
 function view(state) {
   const lis = [...Array(state).keys()];
   // Format the text to ensure consistent display
-  const liEls = lis.map((li) => h("li", null, `Text ${li}`));
-  return h("ul", { className: "hd" }, liEls);
+  const liEls = lis.map((li) => <li>Text {li}</li>);
+  return <ul>{liEls}</ul>;
 }
 
 function flatten(children) {
